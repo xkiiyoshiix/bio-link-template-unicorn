@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Good Unicorn';
+    src: url('../fonts/Good\ Unicorn.ttf')  format('truetype');
+}
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: url(../img/background.jpg) no-repeat right center fixed;
+    /* background-color: #ffb2b1; */
+    background-size: cover;
+    font-family: 'Good Unicorn';
+}
+
+
+header {
+    margin-top: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > img {
+    z-index: 1;
+    width: 10em;
+    height: 10em;
+    /*
+    border-radius: 100%;
+    border: 1px solid #c9b1ff;
+    box-shadow: #c9b1ff 0px 2px 80px 0px;
+    */
+    margin-bottom: 1em;
+}
+
+header > h1 {
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 1em;
+    background-color: #c9b1ff;
+    color: #ffffff;
+    padding: 0.6em 0.9em;
+    border: 1px solid #c9b1ff;
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+}
+
+ul {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 480px;
+}
+
+ul > li {
+    background-color: #d0bcff;
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    border-radius: 5em;
+    padding: 1em;
+    margin: 1.4em 0;
+    box-shadow: #c9b1ff 0px 2px 80px 0px;
+}
+
+ul > li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+a {
+    color: #8c74c4;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
